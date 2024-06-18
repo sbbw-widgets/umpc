@@ -1,4 +1,4 @@
-use souvlaki::{MediaControlEvent, MediaControls, MediaMetadata, PlatformConfig};
+use umpc::{MediaControlEvent, MediaControls, MediaMetadata, PlatformConfig};
 
 fn main() {
     #[cfg(not(target_os = "windows"))]
