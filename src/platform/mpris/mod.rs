@@ -9,9 +9,9 @@ compile_error!("feature \"dbus\" and feature \"zbus\" are mutually exclusive");
 #[cfg(feature = "zbus")]
 mod zbus;
 #[cfg(feature = "zbus")]
-pub use self::zbus::*;
+pub use zbus::*;
 
 #[cfg(feature = "dbus")]
 mod dbus;
 #[cfg(feature = "dbus")]
-pub use self::dbus::*;
+pub use dbus::*;
